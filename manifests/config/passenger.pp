@@ -206,7 +206,7 @@ class foreman::config::passenger(
         ssl_ca                  => $ssl_ca,
         ssl_crl                 => $ssl_crl_real,
         ssl_crl_check           => $ssl_crl_check,
-        ssl_cipher              => 'RSA:!EXP:!NULL:+HIGH:+MEDIUM:-LOW'
+        ssl_cipher              => 'RSA:!EXP:!NULL:+HIGH:+MEDIUM:-LOW',
         ssl_verify_client       => 'optional',
         ssl_options             => '+StdEnvVars +ExportCertData',
         ssl_verify_depth        => '3',
